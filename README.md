@@ -1,8 +1,17 @@
-# Manual Array — Step 2: Coding & Practice Checklist
+# Manual Array 
 
-This folder contains the scaffold for "Step 2: Manual Array Implementation — Full Coding & Testing Checklist". Fill each `.cpp` file with the requested implementations and tests described in the checklist below.
+This project is a hands-on exercise to implement and test manual array operations in C++. It covers fixed-size arrays, dynamic arrays, and advanced memory management techniques. The goal is to build a deeper understanding of arrays, pointers, and memory handling in C++.
 
-Folder: `manual-array/`
+---
+
+## Prerequisites
+
+- **Compiler**: Ensure you have `g++` installed (supports C++17 or later).
+- **Optional Tools**:
+  - [Valgrind](https://valgrind.org/) for memory leak detection.
+  - AddressSanitizer (enabled via compiler flags) for runtime memory checks.
+
+---
 
 ## Files (implement these in order)
 
@@ -23,15 +32,27 @@ Folder: `manual-array/`
 15. `15_iterator_support.cpp` — provide `begin()`/`end()` pointers for range-based for loops.
 16. `16_alignment_and_padding.cpp` — experiments showing `sizeof` and member addresses to study padding.
 
+---
+
 ## How to use
 
 - Open a file, implement the functions and test cases described in the checklist.
 - Compile individual `.cpp` files with `g++ -std=c++17 -O2 -Wall <file>` while you work on them.
 
+---
+
 ## Notes
 
 - Keep tests small and self-contained in each `.cpp` file (a `main()` that demonstrates the feature).
 - When you start implementing heap allocation and move/copy semantics, run tools like Valgrind (or AddressSanitizer) to check for leaks.
+
+---
+
+## Contributing
+
+- Fork the repository and create a new branch for your changes.
+- Follow the checklist and ensure your code is well-documented.
+- Run tests and check for memory leaks before submitting a pull request.
 
 ---
 
