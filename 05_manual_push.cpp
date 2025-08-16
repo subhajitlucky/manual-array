@@ -10,7 +10,7 @@
 #include <iostream>
 using namespace std;
 
-struct FixedArray {
+struct ManualArray {
     int arr[10];
     size_t size;
     size_t capacity;
@@ -32,7 +32,7 @@ struct FixedArray {
 };
 
 int main(){
-    FixedArray myArray = {{0}, 0, 1};
+    ManualArray myArray = {{0}, 0, 1};
     myArray.push_back(10);
     myArray.push_back(20);
 

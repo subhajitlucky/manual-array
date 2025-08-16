@@ -6,7 +6,7 @@
 #include <iostream>
 using namespace std;
 
-struct FixedArray {
+struct ManualArray {
     int arr[10];
     size_t size;
     size_t capacity;
@@ -19,7 +19,7 @@ struct FixedArray {
 };
 
 int main(){
-    FixedArray myArray = {{0}, 0, 10};
+    ManualArray myArray = {{0}, 0, 10};
     myArray.arr[0] = 1;
     myArray.size++;
     myArray.arr[1] = 2;

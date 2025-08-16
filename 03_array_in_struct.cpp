@@ -6,14 +6,14 @@
 #include <iostream>
 using namespace std;
 
-struct FixedArray {
+struct ManualArray {
     int data[10];
     size_t size;
     size_t capacity;
 };
 int main(){
 
-    FixedArray arr = {{0},0,10};
+    ManualArray arr = {{0},0,10};
     arr.data[0]=1;
     arr.size++;
     arr.data[1]=2;
