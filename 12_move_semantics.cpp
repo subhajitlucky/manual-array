@@ -33,6 +33,22 @@ struct DynamicArray{
         other.size = 0;
         other.capacity = 0;
     }
+
+    //move assign
+    DynamicArray& operator=(DynamicArray&& other) {
+        if (this != &other) {
+            delete[] data; // Free existing resource
+
+            this->data = other.data;
+            this->size = other.size;
+            this->capacity = other.capacity;
+
+            other.data = nullptr;
+            other.size = 0;
+            other.capacity = 0;
+        }
+        return *this;
+    }
 };
 
 int main(){
